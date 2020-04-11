@@ -1,9 +1,14 @@
 ---
-title: 'My First AMV'
-date: '2017-08-21'
-description: 'My first AMV :)'
+title: 'Chester, A Legend'
+date: '2019-12-21'
+description: 'A tribute'
 ---
 
-Check this out!
+Listened to this song after ages, still gets me.
 
-<iframe width="673" height="538" src="https://www.youtube.com/embed/2-dohnsyL9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*Who cares if one more light goes out?*  
+*In a sky of a million stars*  
+  
+*If a moment is all we are*
+
+<iframe width="400" height="300" src="https://www.youtube.com/embed/Tm8LGxTLtQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
