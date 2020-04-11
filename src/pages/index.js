@@ -13,12 +13,18 @@ const BlogTitle = styled.h3`
     color: #1dcaff;
   }
 `
-
 const BlogLink = styled(Link)`
   text-decoration: none;
   color: inherit;
 `
-
+const EasterEggLink = styled(Link)`
+  text-decoration: none;
+  font-weight: bold;  
+  color: inherit;
+  &:hover {
+    color: #1dcaff;
+  }
+`
 const BlogBody = styled.div`
   margin-bottom: 50px;
 `
@@ -39,6 +45,9 @@ export default ({ data }) => {
             <p>{node.frontmatter.description || node.excerpt}</p>
           </BlogBody>
         ))}
+        <EasterEggLink to="/caesar">&#x02111;&#x02102;</EasterEggLink> 
+        &ensp;
+        <EasterEggLink to="/my-files">&#x021AD;</EasterEggLink> 
       </div>
     </Layout>
   )

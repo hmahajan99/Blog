@@ -11,7 +11,13 @@ const ImageContainer = styled.div`
   width: 150px;
   height: 150px;
 `
-
+const HomepageLink = styled(Link)`
+  text-decoration: underline;
+  color: inherit;
+  &:hover {
+    color: #1dcaff;
+  }
+`
 const SecondPage = () => (
   <Layout>
     <SEO title="Master of Rome" />
@@ -21,7 +27,7 @@ const SecondPage = () => (
       <AnstronautImage relativePath="gatsby-astronaut.png" /> 
     </ImageContainer>
     <p>"Hello from the other side!" - Caesar</p>
-    <Link to="/">Go back to the homepage</Link>
+    <HomepageLink to="/">Go back to the homepage</HomepageLink>
   </Layout>
 )
 

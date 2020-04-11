@@ -1,6 +1,15 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import styled from "styled-components"
+
+const HomepageLink = styled(Link)`
+  text-decoration: underline;
+  color: inherit;
+  &:hover {
+    color: #1dcaff;
+  }
+`
 
 export default ({ data }) => {
   console.log(data)
@@ -28,7 +37,8 @@ export default ({ data }) => {
             ))}
           </tbody>
         </table>
-      </div>
+        <HomepageLink to="/">Go back to the homepage</HomepageLink>
+        </div>
     </Layout>
   )
 }

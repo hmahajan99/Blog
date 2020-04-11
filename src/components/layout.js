@@ -8,10 +8,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Header from "./header"
 import "./layout.css"
 
+const LinkedInLink = styled.a`
+  text-decoration: underline;
+  color: inherit;
+  &:hover {
+    color: #1dcaff;
+  }
+`
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -37,7 +45,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Made with &#10084; by{' '}
-          <a href="https://www.linkedin.com/in/hmahajan99" target="to_blank">Harshit</a>
+          <LinkedInLink href="https://www.linkedin.com/in/hmahajan99" target="to_blank"><strong>&#x0210B;</strong>arshit</LinkedInLink>
         </footer>
       </div>
     </>
